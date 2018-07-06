@@ -1,0 +1,17 @@
+the website allows the user to select a console and search a game
+- the results displayed include the title, and any titles close to that one, ratings, and prices
+- when a specific title is clicked, the next page includes a detailed description, game image, prices, and it also embeds twitch video/Youtube video of gameplay, and it also includes a more detailed review
+
+
+rough breakdown of tasks:
+
+1) create index to setup website.
+- buttons
+- modals
+
+2) css to construct website how we want it to look.
+- alternative library (materialize)
+
+3) link igdb, twitch, and youtube API
+
+4) format specific API info and append to index.
