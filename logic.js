@@ -1,0 +1,1 @@
+$('.dropdown-trigger').on("click", instance.open());
