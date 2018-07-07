@@ -1,1 +1,1 @@
-//   $('.dropdown-trigger').dropdown();
+$('.dropdown-trigger').on("click", instance.open());
