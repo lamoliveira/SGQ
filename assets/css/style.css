@@ -1,0 +1,63 @@
+/**
+ * Style for trivia game
+ * Luiz Oliveira
+ **/
+ * {
+  text-align: center;
+  font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+}
+body{
+  font-size: 12px;
+}
+h3{font-size: 14px;
+text-align: left;
+background-color: aquamarine;
+height: 25px;
+}
+th{
+  font-size: 14px;
+}
+body {
+  background-size: cover;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.jumbotron{
+ 
+  background-color: aquamarine;
+  height: 160px;
+}
+.table{
+border: 1px solid aquamarine;
+}
+
+#table-train{
+  border: 1px solid aquamarine;
+  text-align: center;
+  margin: 1%;
+  }
+  #form-train{
+    border: 1px solid aquamarine;
+    text-align: center;
+    padding: 50px;
+    }
+    .form-group{
+      text-align: left;
+      margin: 1%;
+    }
+    .form-control{
+      text-align: left;
+  
+    }
+    .label-train{
+     box-align: left; 
+     font-size: 14px;
+    }
+  #add-train{
+    border: 1px solid aquamarine;
+    text-align: center;
+    background-color:  aquamarine;
+    }
+  
