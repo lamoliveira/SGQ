@@ -1,0 +1,58 @@
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#navbar {
+    width: 100%;
+        
+}
+
+.form-group {
+    text-align: center;
+    width: 25%;
+    margin-left: 37.5%
+}
+
+.form-control {
+    text-align: center;
+}
+
+.button {
+    float: center;
+}
+
+.text-center {
+    display: none;
+    background-color: rgb(191, 226, 226);
+}
+
+.td{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(161, 157, 157);
+    width: 100%;
+    color: white;
+    padding: 5px;
+
+}
+
+.table-vg {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(161, 157, 157);
+    color: white;
+    padding: 5px;
+}
+
+.ratingC {
+    text-align: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
