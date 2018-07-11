@@ -34,4 +34,65 @@ $.ajax({
     }
 }).then(function (snapshot) {
     showSelected(snapshot);
+    showProduct(snapshot);
 });
+// new query for product 
+
+function showProduct(game) {
+var buildquery = "";
+console.log(buildquery);
+console.log("product");
+console.log("game:" + game[0].name)
+//buildquery += "?fields=*";
+token = "c0b53bce27c1bdab90b1605249e600dc43dfd1d5";
+query = "https://www.pricecharting.com/api/product?t="+ token + "&q=" + game[0].name;
+
+$.ajaxPrefilter(function (options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+        options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
+$.ajax({
+    type: 'GET',
+    url: query,
+    
+    headers: {
+        //'user-key': '356fd165776f7158f97ab77117d2e442',
+        'Accept': 'application/json'
+    }
+}).then(function (product) {
+    console.log(product);
+    showPrice(product);
+});
+}
+function showPrice (product) {
+
+// new query for price
+
+var buildquery = "";
+console.log(buildquery);
+console.log("price");
+//buildquery += "?fields=*";
+token = "c0b53bce27c1bdab90b1605249e600dc43dfd1d5";
+query = "https://www.pricecharting.com/api/offers?t="+ token + "&id=" + product.id ;
+
+$.ajaxPrefilter(function (options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+        options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
+$.ajax({
+    type: 'GET',
+    url: query,
+    
+    headers: {
+        //'user-key': '356fd165776f7158f97ab77117d2e442',
+        'Accept': 'application/json'
+    }
+}).then(function (snapshot) {
+    console.log(snapshot);
+    showOffers(snapshot);
+});
+}
