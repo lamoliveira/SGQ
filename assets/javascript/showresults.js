@@ -20,7 +20,7 @@ function showresults(snapshot) {
     }
     newtd.append(cover);
     newrow.append(newtd);
-    newrow.append( "<td>" + "<a class='selected-result' href='selectedresult.html?id=" + snapshot[i].id + "'>" + snapshot[i].name + "</a>" + "</td>" + "<td class='ratingC'>" + parseInt(snapshot[i].rating) + "</td>");
+    newrow.append( "<td>" + snapshot[i].name + "</td>" + "<td class='ratingC'>" + parseInt(snapshot[i].rating) + "</td>");
 
 
     vg.append(newrow);

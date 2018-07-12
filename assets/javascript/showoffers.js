@@ -17,7 +17,7 @@ function showOffers(snapshot) {
     }*/
     //newtd.append(cover);
     newrow.append(newtd);
-    newrow.append("<td>" + snapshot.offers[i].id + "</td>" +"<td>" + snapshot.offers[i]["console-name"] + "</td>" + "<td>" + snapshot.offers[i]["product-name"] + "</td>" + "<td>" + snapshot.offers[i]["price"] + "</td>"   );
+    newrow.append( "<td>" + snapshot.offers[i]["console-name"] + "</td>" + "<td>" + snapshot.offers[i]["product-name"] + "</td>" + "<td>" + snapshot.offers[i]["price"] + "</td>"   );
    // if (!snapshot.offers[i].price) {
    // newrow.append("<td>"  + snapshot.offers[i].price + "</td>");
    // }
