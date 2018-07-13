@@ -1,6 +1,15 @@
-var apikey = "AIzaSyCFQH5Y6jt67hPbKz1lw95jwjgFYGxG_QA"
-var game = "fortnite"
-var queryURL = "https://www.youtube.com/results?search_query="+ game +"+gameplay&api_key=" + apikey
+function start() {
 
-
-console.log(queryURL);
+gapi.client.init({
+    'apiKey': 'AIzaSyCFQH5Y6jt67hPbKz1lw95jwjgFYGxG_QA', 
+}).then(function(){
+    return gapi.client.request({
+        'path': 'https://people.googleapis.com/v1/people/me?requestMask.includeField=person.names'     
+    })
+}).then(function(response) {
+    console.log(response.result);
+}, function(reason) {
+    console.log("Error: " + reason.result.error.message);
+});
+};
+gapi.load('client', start);
