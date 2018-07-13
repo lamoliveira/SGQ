@@ -7,6 +7,7 @@ $("#search-vg").on("click", function (event) {
     callAPI();
     $(".form-vg").hide();
     $(".text-center").show();
+
     });
 }
 
