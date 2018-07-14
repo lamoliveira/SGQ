@@ -7,6 +7,7 @@ $("#search-vg").on("click", function (event) {
     $(".text-center").show();
 });
 
+
 $(".selected-result").on("click", function (event) {
     selectedresult(event);
 });

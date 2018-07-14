@@ -1,0 +1,42 @@
+        ::Presentation::
+
+
+        ::Description::
+This project, Super Game Gifts (SGG for short), is a simple search engine for video games for those not interested in all of the extra jargon associated with other popular search engines. The user searches for a game, clicks on the search button and is provided with a list of results, along with a rating out of 100, and the most updated prices set for it. 
+
+
+        ::Motivation::
+A common problem for people buying video games as gifts, is that most of them are uninformed non-gamers who do not need to know every aspect of a video game, just the price and whether they are getting the right one. This search engine provides that, without irrelevent information clouding the results. 
+
+
+        ::Results::
+While we had more features we wanted to add, our end result was a fully functioning search engine that accurately searches games along with the price and a rating...Our ice bucket was filled to the brim.
+
+        ::Team Efforts::
+After the idea for the project was set, half of us searched for API information, while the other half began on the HTML and CSS, which created the distinct roles, back-end and front-end. Luis and Brandon worked on the Javascript and the API information, and Stephen and Nick worked on the HTML, CSS, and linking the HTML to the Javascript.
+
+
+        ::Design Process::
+After we had an idea, we first discussed what the website would look like. Originally, we decided that it was going to be set up into 3 pages; Search Page, Results Page, and Selected Results Page that showed more information about the searched game. Using the Canvaa website, we designed the visuals of each page. After experiencing a few issues with some API's, we reduced the content to 2 pages, Search Page, and Results Page. We took a minimalist approach to the site, using a lot of white and light colors to display information. 
+
+
+        ::Challenges/Tech Used::
+For the front end of the project, we used the Materialize library. Being a CSS library, it works similar to Bootstrap, except it proved to be a little more of a pain. In retrospect, editing was actually similar to Bootstrap in that the customization was held in the classes of elements. I don't think it was as much of a pain as it was learning a new way to do something we have already been comfortable using. 
+
+On the back-end, Luiz and Brandon spent some time researching how to call the Igdb APIs, because it was not possible through a direct ajax call. As a solution Luiz tried to use node.js. It worked, but only locally and publishing it to heroku proved difficult. We were able to do it with Michael's help, and it showed that it is simple using cors with the ajax prefilter. We used the same method when calling in the API for the prices. We also attempted to use an API to embed gameplay for the games, but the choice of games was limited and not worth keeping as a feature.
+
+A common problem between the 4 of us was using Github to collaborate. Between making branches, using pull requests, and   , we just had a hard time 
+
+
+
+
+        ::Future Development::
+
+
+
+
+
+
+
+
+

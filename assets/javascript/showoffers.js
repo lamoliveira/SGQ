@@ -1,7 +1,7 @@
 
 function showOffers(snapshot) {
   $("#prices").empty();
-  
+
   // Log everything that's coming out of snapshot
   console.log("length:" + snapshot.offers.length);
 
@@ -11,16 +11,13 @@ function showOffers(snapshot) {
     var newrow = $("<tr>");
     var newtd = $("<td>");
     var cover = $("<img>");
+    var subHeading = $("#selectedGame")
     cover.addClass("img-responsive thumb");
-    /*if (snapshot[i].cover) {
-      cover.attr("src", "http://" + snapshot[i].cover.url);
-    }*/
-    //newtd.append(cover);
+
+    subHeading.text(snapshot.offers[i]["product-name"]);
     newrow.append(newtd);
-    newrow.append("<td>" + snapshot.offers[i].id + "</td>" +"<td>" + snapshot.offers[i]["console-name"] + "</td>" + "<td>" + snapshot.offers[i]["product-name"] + "</td>" + "<td>" + snapshot.offers[i]["price"] + "</td>"   );
-   // if (!snapshot.offers[i].price) {
-   // newrow.append("<td>"  + snapshot.offers[i].price + "</td>");
-   // }
+    newrow.append("<td>" + snapshot.offers[i]["product-name"] + "</td>" +  "<td>" + (snapshot.offers[i]["price"] / 100) + "</td>");
+
 
     vg.append(newrow);
 
